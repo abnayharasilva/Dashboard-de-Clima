@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard de Clima</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Chart.js para gráficos -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- AOS para animações -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+  <!-- Cabeçalho com botão de modo escuro -->
+  <header>
+    <h1>🌤️ Dashboard de Clima</h1>
+    <button id="toggleTema">🌙 Modo Escuro</button>
+  </header>
+
+  <main>
+    <!-- Campo de busca manual -->
+    <section class="busca" data-aos="fade-down">
+      <input type="text" id="cidade" placeholder="Digite a cidade..." />
+      <button id="buscarBtn">Buscar</button>
+    </section>
+
+    <!-- Clima atual -->
+    <section class="dados-clima" id="dadosClima" data-aos="fade-up"></section>
+
+    <!-- Gráfico de temperatura -->
+    <section class="grafico" data-aos="zoom-in">
+      <canvas id="graficoTemperatura"></canvas>
+    </section>
+
+    <!-- Previsão para 5 dias -->
+    <section class="previsao" id="previsao" data-aos="fade-up">
+      <h2>Previsão para 5 dias</h2>
+      <div class="dias-container" id="diasContainer"></div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 Abnayhara | Projeto Front-End</p>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>

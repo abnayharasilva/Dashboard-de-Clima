@@ -1,0 +1,144 @@
+/* Tema claro padrão */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #eef2f3;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background: #4a90e2;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+/* Botão de modo escuro */
+#toggleTema {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: white;
+  color: #4a90e2;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Área principal */
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Busca */
+.busca {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.busca input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.busca button {
+  padding: 0.5rem 1rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Card de dados do clima */
+.dados-clima {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.dados-clima img {
+  width: 100px;
+  margin: 1rem auto;
+}
+
+/* Gráfico */
+.grafico {
+  margin-bottom: 2rem;
+}
+
+/* Previsão */
+.previsao {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.dias-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dia {
+  flex: 1;
+  min-width: 120px;
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.dia img {
+  width: 50px;
+  margin: 0.5rem 0;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #4a90e2;
+  color: white;
+}
+
+/* 🌙 Modo escuro */
+body.dark-mode {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode header {
+  background: #333;
+  color: #f0f0f0;
+}
+
+body.dark-mode #toggleTema {
+  background: #f0f0f0;
+  color: #333;
+}
+
+body.dark-mode .dados-clima,
+body.dark-mode .previsao {
+  background: #2c2c2c;
+  color: #f0f0f0;
+}
+
+body.dark-mode .dia {
+  background: #444;
+}
